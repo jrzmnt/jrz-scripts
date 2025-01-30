@@ -1,3 +1,24 @@
+"""
+Sorts an array in ascending order using the Merge Sort algorithm.
+
+Parameters:
+- array (list): The list of elements to be sorted. The list is modified in place.
+
+Returns:
+- None: The array is sorted in place, so no value is returned.
+
+Algorithm:
+1. Divide the array into two halves.
+2. Recursively sort each half.
+3. Merge the two sorted halves back together in ascending order.
+
+Example:
+    numbers = [4, 10, 6, 14, 2, 1, 8, 5]
+    merge_sort(numbers)
+    # numbers will be [1, 2, 4, 5, 6, 8, 10, 14]
+"""
+
+
 def merge_sort(array):
     if len(array) <= 1:
         return

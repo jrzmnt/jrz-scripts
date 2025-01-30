@@ -1,3 +1,21 @@
+"""
+Adds a duration to a start time and returns the resulting time and day.
+
+Parameters:
+- start_time (str): A time in 12-hour format (e.g., '3:00 PM').
+- duration (str): A duration in hours and minutes (e.g., '2:30').
+- start_day (str, optional): A day of the week (e.g., 'Monday'). Case insensitive.
+
+Returns:
+- str: The new time in 12-hour format, optionally including the day of the week
+       and the number of days later (e.g., '6:18 AM, Monday (20 days later)').
+
+Example:
+    add_time("8:16 PM", "466:02", "tuesday") 
+    # Returns: '6:18 AM, Monday (20 days later)'
+"""
+
+
 def add_time(start_time, duration, start_day=None):
     # Split the start time into components
     time, period = start_time.split()
